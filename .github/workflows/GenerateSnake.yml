@@ -11,7 +11,9 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.TOKEN }}
 
       - name: Generate Snake
         uses: Platane/snk@master
